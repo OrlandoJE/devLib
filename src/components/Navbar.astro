@@ -1,0 +1,17 @@
+---
+import { Data } from '../database.js';
+---
+
+<aside class='flex flex-col px-10 py-8'>
+  <span class='mb-4'>Home</span>
+  <ul class='flex flex-col gap-4'>
+    {
+      Object.entries(Data.categories).map(([category, items]) => (
+        <li class='flex justify-between'>
+          <strong>{category}</strong>
+          <div>{items.length}</div>
+        </li>
+      ))
+    }
+  </ul>
+</aside>
