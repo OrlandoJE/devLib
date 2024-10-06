@@ -4,17 +4,22 @@ import IconGitHub from '../svgs/IconGitHub.astro';
 import IconLink from '../svgs/IconLink.astro';
 ---
 
-<nav class='px-10 h-16 col-span-2 flex justify-between items-center border-b-[0.1px] border-colorAccent'>
-  <a href='#' class='flex gap-4 items-center'>
+<nav
+  class='px-10 h-16 col-span-2 flex justify-between items-center border-b-[0.1px] border-colorAccent'
+>
+  <a href='/' class='flex gap-4 items-center'>
     <IcondevLib />
     devLib
   </a>
   <div class='flex gap-12 items-center'>
-    <a href='#' class='flex items-center underline'>
-      Add Site
+    <a
+      href='https://github.com/OrlandoJE/devLib/issues/new'
+      class='flex items-center underline'
+    >
+      Request a Site
       <IconLink />
     </a>
-    <a href='#'>
+    <a href='https://github.com/OrlandoJE/devLib' aria-label="GitHub Repository">
       <IconGitHub />
     </a>
   </div>
