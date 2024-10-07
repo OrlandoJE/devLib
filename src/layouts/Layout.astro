@@ -43,4 +43,41 @@ const { title } = Astro.props;
     background: var(--background);
     color: var(--text);
   }
+  a,
+  svg {
+    transition: 0.2s;
+  }
+  svg.GitHub {
+    fill: var(--text);
+  }
+  svg.Link,
+  svg.devLib,
+  svg.Home {
+    stroke: var(--text);
+  }
+  a:hover {
+    color: var(--accent);
+  }
+  a:hover svg.GitHub {
+    fill: var(--accent);
+  }
+  a:hover svg.Link,
+  a:hover svg.devLib {
+    stroke: var(--accent);
+  }
+  button,
+  button .numberContainer {
+    transition: 0.2s;
+  }
+  button:hover {
+    background: var(--accent);
+    color: var(--background);
+  }
+  button:hover .numberContainer {
+    background: var(--background);
+    color: var(--textLight);
+  }
+  button:hover svg {
+    stroke: var(--background);
+  }
 </style>

@@ -4,6 +4,7 @@ export default {
 	theme: {
 		colors: {
 			'colorBackground': '#121212',
+			'colorBackgroundLighter': '#292929',
 			'colorAccent': '#A7D9D8',
 			'colorText': '#D7E0E0',
 			'colorTextLight': '#A7B0B0',

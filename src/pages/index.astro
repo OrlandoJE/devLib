@@ -1,16 +1,10 @@
 ---
-import Navbar from '../components/Sidebar.astro';
+import { Content } from '../components/Content.tsx';
+import { Sidebar } from '../components/Sidebar.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='devLib'>
-  <Navbar />
-  <main class='flex flex-col justify-center items-center py-32 gap-4'>
-    <h1 class="text-5xl font-bold">Discover the Tools for your Development</h1>
-    <p class="text-colorTextLight">
-      A project that brings together the best tools for design and web
-      development. Choose what you want and be directly taken to the tool you
-      need.
-    </p>
-  </main>
+  <Sidebar client:load />
+  <Content client:load/>
 </Layout>

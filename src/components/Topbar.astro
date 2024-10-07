@@ -8,7 +8,7 @@ import IconLink from '../svgs/IconLink.astro';
   class='px-10 h-16 col-span-2 flex justify-between items-center border-b-[0.1px] border-colorAccent'
 >
   <a href='/' class='flex gap-4 items-center'>
-    <IcondevLib />
+  <IcondevLib />
     devLib
   </a>
   <div class='flex gap-12 items-center'>
@@ -19,7 +19,12 @@ import IconLink from '../svgs/IconLink.astro';
       Request a Site
       <IconLink />
     </a>
-    <a href='https://github.com/OrlandoJE/devLib' aria-label="GitHub Repository">
+    <a
+      href='https://github.com/OrlandoJE/devLib'
+      class='flex gap-2 underline'
+      aria-label='GitHub Repository'
+    >
+      GitHub Repository
       <IconGitHub />
     </a>
   </div>
