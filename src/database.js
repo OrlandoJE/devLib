@@ -76,6 +76,12 @@ export const Data = {
                 description: "SVGOMG is an online tool for optimizing SVG files. You can upload an SVG file, adjust the settings, and download the optimized SVG file.",
                 url: "https://svgomg.net/",
                 image: "Optimizers/SVGOMG"
+            },
+            {
+                name: "CloudConvert",
+                description: "CloudConvert is an online tool that allows you to convert files between different formats, including images, documents, audio, and video. It can be used to convert images to the WebP format for better web performance.",
+                url: "https://cloudconvert.com/",
+                image: "Optimizers/CloudConvert"
             }
         ],
     }
