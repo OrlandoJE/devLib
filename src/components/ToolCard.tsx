@@ -7,13 +7,10 @@ interface ToolCardProps {
 }
 
 export const ToolCard = (props: ToolCardProps) => {
-  function imgSource(imagePath: string) {
-    return new URL(`../../public/Images/${imagePath}`, import.meta.url).href;
-  }
   return (
     <div className='border-[0.2px] border-colorBackgroundLighter shadow-colorTextLight shadow-sm rounded-xl w-96 m-8 flex flex-col flex-wrap overflow-hidden gap-4'>
       <img
-        src={imgSource(props.image)}
+        src={`Images/${props.image}.webp`}
         className='h-72 shadow-colorBackgroundLighter shadow-md'
       ></img>
       <div className='px-4'>

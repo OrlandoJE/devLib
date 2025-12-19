@@ -3,27 +3,25 @@ import { toolsType, toolsContent } from '../store';
 
 export const Sidebar = () => {
   return (
-    <aside className='flex flex-col px-10 py-8 border-r-[0.2px] border-colorAccent'>
+    <aside className='flex flex-col px-10 py-8 border-r-[0.2px] border-colorAccent min-w-fit'>
       <button
-        className='mb-6 flex gap-2 items-center h-10 rounded-lg px-2'
+        className='flex my-2 gap-2 items-center h-10 rounded-lg px-2'
         onClick={() => {
           toolsType.set('Home');
           toolsContent.set([]);
-        }}
-      >
+        }}>
         <strong>Home</strong>
       </button>
-      <span className='mb-4'>Categories</span>
+      <span className='mt-6 mb-4'>Tools</span>
       <div className='flex flex-col gap-4'>
         {Object.entries(Data.categories).map(([category, tools]) => (
           <button
             key={category}
-            className='flex justify-between items-center h-10 cursor-pointer px-2 rounded-lg'
+            className='flex justify-between items-center h-10 cursor-pointer px-2 rounded-lg gap-4'
             onClick={() => {
               toolsType.set(category);
               toolsContent.set(tools);
-            }}
-          >
+            }}>
             <strong>{category}</strong>
             <div className='numberContainer bg-colorTextLight text-colorBackground rounded-lg px-2 items-center'>
               {tools.length}
